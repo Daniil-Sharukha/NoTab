@@ -1,0 +1,55 @@
+.video
+    position: relative
+    &__background
+        position: absolute
+        z-index: -1
+        width: 100%
+        img
+            position: absolute
+            height: 1200px
+            width: 100%
+            object-fit: cover
+    &__wrapper
+        padding-top: 380px
+        position: relative
+    &__phone
+        img
+            display: block
+            margin: 0 auto
+    &__content
+        position: absolute
+        bottom: 25px
+        left: 235px
+@media ( max-width: 1200px )
+    .video
+        &__content
+            left: 145px
+@media ( max-width: 992px )
+    .video
+        &__background
+            img
+                height: 800px
+        &__content
+            left: 95px
+            img
+                height: 310px
+        &__phone
+            img
+                width: 720px
+        &__wrapper
+            padding-top: 200px
+@media ( max-width: 768px )
+    .video
+        &__phone
+            img
+                width: 450px
+        &__content
+            bottom: 15px
+            img
+                height: 195px
+        &__background
+            img
+                height: 600px
+@media ( max-width: 576px )
+    .video
+        display: none
