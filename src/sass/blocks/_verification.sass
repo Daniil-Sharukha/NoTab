@@ -1,0 +1,45 @@
+.verification
+    position: relative
+    margin-bottom: 200px
+    &__background
+        position: absolute
+        width: 100%
+        z-index: -1
+        img
+            position: relative
+            width: 100%
+            height: 860px
+            object-fit: cover
+    &__wrapper
+        padding-top: 460px
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+    &__column
+        width: 30%
+        &:last-child
+            padding-bottom: 70px
+        img
+            width: 100%
+@media ( max-width: 768px )
+    .verification
+        margin-bottom: 150px
+        &__background
+            img
+                height: 300px
+        &__wrapper
+            flex-direction: column-reverse
+            padding-top: 220px
+            align-items: center
+        &__column
+            width: 100%
+            &:nth-child(2)
+                padding-bottom: 55px
+            img
+                display: block
+                margin: 0 auto
+                width: auto
+                height: 575px
+
+
+
