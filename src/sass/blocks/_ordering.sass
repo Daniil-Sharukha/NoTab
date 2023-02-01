@@ -1,0 +1,108 @@
+.ordering
+    position: relative
+    overflow: hidden
+    margin-bottom: 150px
+    &__inner
+        max-width: 425px
+        float: right
+    &__wrapper
+        position: relative
+    &__circle
+        width: 285px
+        height: 265px
+        position: absolute
+        right: -6%
+        top: 12%
+        img
+            width: 100%
+    &__phone
+        display: block
+        margin: 0 auto
+    &__content
+        position: relative
+    &__label
+        position: absolute
+        max-width: 285px
+        max-height: 113px
+        padding: 22px
+        border: 1px solid rgba(255, 255, 255, 0.5)
+        border-radius: 20px
+        background-color: #000
+        &-first
+            top: 35%
+            right: 20%
+        &-second
+            top: 45%
+            left: 13%
+        &-third
+            top: 67%
+            right: 11%
+        &-fourth
+            top: 75%
+            left: 30%
+@media ( max-width: 1200px )
+    .ordering
+        &__phone
+            width: 80%
+        &__label
+            &-first
+                top: 37%
+                right: 15%
+            &-second
+                left: 6%
+            &-third
+                right: 6%
+            &-fourth
+                left: 25%
+@media ( max-width: 992px )
+    .ordering
+        &__inner
+            max-width: 400px
+        &__label
+            &-second
+                left: 3%
+            &-third
+                right: 4%
+@media ( max-width: 768px )
+    .ordering
+        height: 800px
+        &__inner
+            float: none
+            margin: 0 auto
+            text-align: center
+            margin-bottom: 100px
+        &__label
+            padding: 13px
+            border-radius: 13px
+            &-first
+                top: 11%
+            &-second
+                top: -9%
+            &-third
+                top: 95%
+                right: 5%
+            &-fourth
+                left: 15%
+@media ( max-width: 576px )
+    .ordering
+        height: 770px
+        margin-bottom: 0
+        &__phone
+            width: 100%
+        &__inner
+            text-align: left
+            margin-bottom: 140px
+            .subtitle
+                font-size: 14px
+        &__label
+            &-first
+                top: -1%
+                right: -3%
+            &-second
+                top: -22%
+                left: 3%
+            &-third
+                top: 100%
+                right: 0
+            &-fourth
+                left: 4%
