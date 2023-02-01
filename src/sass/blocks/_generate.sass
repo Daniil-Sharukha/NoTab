@@ -1,0 +1,92 @@
+.generate
+    position: relative
+    &__background
+        position: absolute
+        width: 100%
+        top: -50%
+        z-index: -1
+        img
+            height: 1400px
+            width: 100%
+            object-fit: cover
+    &__wrapper
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__content
+        margin-bottom: 80px
+        position: relative
+    &__scan
+        position: absolute
+        font-family: 'Montserrat'
+        font-style: normal
+        font-weight: 700
+        font-size: 21px
+        line-height: 26px
+        color: #FFFFFF
+        right: -115%
+        top: 58%
+        &::before
+            position: absolute
+            content: url('../img/Arrow.svg')
+            width: 50px
+            height: 50px
+            top: -80px
+            left: -80px
+    &__descr
+        display: flex
+        width: 100%
+        justify-content: space-between
+        align-items: center
+        .title
+            max-width: 400px
+        .subtitle
+            max-width: 300px
+@media ( max-width: 992px )
+    .generate
+        &__scan
+            top: auto
+            right: -55%
+            bottom: -5%
+            &::before
+                left: 0
+        &__wrapper
+            flex-direction: column-reverse
+        &__descr
+            flex-direction: column
+            margin-bottom: 70px
+        &__background
+            top: -30%
+@media ( max-width: 768px )
+    .generate
+        &__content
+            img
+                width: 230px
+        &__scan
+            right: -40%
+            bottom: -15%
+            &::before
+                transform: rotate(40deg)
+                top: -120px
+                left: 80px
+        &__background
+            top: 0%
+            img
+                height: 800px
+@media ( max-width: 576px )
+    .generate
+        margin-bottom: 100px
+        &__content
+            img
+                width: 180px
+        &__scan
+            font-size: 18px
+            line-height: 22px
+            right: -21%
+            bottom: -21%
+            &::before
+                top: -110px
+        &__background
+            top: 30%
+            img
+                height: 300px
