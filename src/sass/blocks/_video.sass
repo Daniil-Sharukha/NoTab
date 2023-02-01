@@ -1,4 +1,5 @@
 .video
+    height: 1100px
     position: relative
     &__background
         position: absolute
@@ -6,7 +7,7 @@
         width: 100%
         img
             position: absolute
-            height: 1200px
+            height: 1050px
             width: 100%
             object-fit: cover
     &__wrapper
@@ -22,10 +23,12 @@
         left: 235px
 @media ( max-width: 1200px )
     .video
+        height: 1000px
         &__content
             left: 145px
 @media ( max-width: 992px )
     .video
+        height: 750px
         &__background
             img
                 height: 800px
@@ -40,6 +43,7 @@
             padding-top: 200px
 @media ( max-width: 768px )
     .video
+        height: 600px
         &__phone
             img
                 width: 450px
