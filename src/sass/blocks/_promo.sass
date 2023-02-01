@@ -1,0 +1,173 @@
+.promo
+    &__wrapper
+        display: flex
+        justify-content: space-around
+        margin-bottom: 265px
+    &__text
+        width: 60%
+    &__title
+        font-family: 'Montserrat'
+        font-weight: 700
+        font-size: 64px
+        line-height: 70px
+        color: $main-color
+        margin-bottom: 130px
+    &__subtitle
+        position: relative
+        padding-left: 50px
+    &__descr
+        position: relative
+        max-width: 500px
+        font-family: 'NotoSans'
+        font-weight: 400
+        font-size: 20px
+        line-height: 27px
+        color: $main-color
+        padding-left: 70px
+        &::before
+            content: ''
+            display: inline-block
+            position: absolute
+            width: 140px
+            height: 4px
+            background-color: $main-color
+            left: -60px
+            top: 25px
+            transform: rotate(120deg)
+    &__phone
+        width: 30%
+        position: relative
+        img
+            position: absolute
+            width: 100%
+            top: -40%
+    &__smudge
+        position: absolute
+        overflow: hidden
+        height: 820px
+        width: 1050px
+        bottom: 0
+        right: 0
+        z-index: -1
+    &__circle
+        position: absolute
+        bottom: -50%
+        left: -7%
+        z-index: -1
+    &__download
+        display: flex
+        justify-content: space-between
+        margin-bottom: 15px
+    &__appeal
+        max-width: 415px
+        font-family: 'Montserrat'
+        font-weight: 700
+        font-size: 35px
+        line-height: 52px
+        color: $main-color
+@media ( max-width: 1200px )
+    .promo
+        &__wrapper
+            margin-bottom: 160px
+        &__text
+            width: 50%
+        &__subtitle
+            padding-left: 20px
+        &__circle
+            left: -15%
+        &__smudge
+            bottom: -35%
+            img
+                position: absolute
+                left: 30%
+@media ( max-width: 992px )
+    .promo
+        &__wrapper
+            margin-bottom: 120px
+        &__title
+            font-size: 55px
+            margin-bottom: 100px
+        &__descr
+            padding-left: 60px
+            font-size: 17px
+            &::before
+                top: 45px
+                width: 120px
+        &__phone
+            img
+                width: 115%
+                top: -20%
+        &__download
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin-bottom: 30px
+        &__appeal
+            margin-bottom: 30px
+@media ( max-width: 768px )
+    .promo
+        &__title
+            font-size: 45px
+            margin-bottom: 90px
+        &__descr
+            padding-left: 0
+            &::before
+                display: none
+        &__subtitle
+            padding-left: 0
+        &__wrapper
+            justify-content: space-between
+        &__phone
+            width: 40%
+            img
+                width: 122%
+                top: -20%
+@media ( max-width: 576px )
+    .promo
+        .container
+            padding-right: 0
+        &__text
+            width: 60%
+            margin-top: 25px
+        &__title
+            font-size: 32px
+            line-height: 40px
+            margin-bottom: 24px
+        &__subtitle
+            padding-left: 0
+        &__descr
+            font-size: 16px
+            line-height: 22px
+            padding-left: 0
+            &::before
+                display: none
+        &__circle
+            left: -50%
+            scale: .7
+            opacity: .4
+        &__download
+            flex-direction: column
+        &__phone
+            height: 320px
+            width: 30%
+            overflow: hidden
+            img
+                width: 160px
+                top: 0
+        &__smudge
+            bottom: -25%    
+            img
+                scale: .7
+                transform: rotate(25deg)
+                left: 35%
+        &__wrapper
+            justify-content: space-between
+            margin-bottom: 55px
+        &__appeal
+            max-width: none
+            width: 95%
+            text-align: center
+            font-size: 22px
+            margin-bottom: 35px
+            line-height: 29px
+

@@ -1,18 +1,29 @@
 @import 'libs/bootstrap-reboot.min'
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans:wght@400;500;700&family=Roboto:wght@500&display=swap')
+@import 'base/_fonts'
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+body
+	background-color: #000
+
+.container
+	width: 1140px
+	margin: 0 auto
+
+@import 'base/_variables'
+@import 'base/_header'
+@import 'base/_apps'
+@import 'base/_cookie'
+@import 'blocks/_promo'
 
 // font-family: 'Montserrat', sans-serif
 // font-family: 'Noto Sans', sans-serif
 // font-family: 'Roboto', sans-serif
 
-*
-	font-family: 'Roboto', sans-serif
-	margin: 0
-	padding: 0
 
-.container
-	width: 1140px
-	margin: 0 auto
 
 // @media ( max-width: 1200px )
 //     .container
@@ -31,25 +42,16 @@
 //         width: 100%
 //         padding: 0 10px
 
-// @font-face
-//     font-family: 'Avenir LT Medium'
-//     src: url('AvenirLT-Medium.eot')
-//     src: url('AvenirLT-Medium.eot?#iefix') format('embedded-opentype'),
-//     url('AvenirLT-Medium.woff') format('woff'),
-//     url('AvenirLT-Medium.ttf') format('truetype')
-//     font-weight: normal
-//     font-style: normal
-
-// .box-name {font-family: 'Avenir LT Medium';}
-
-
-// @font-face
-//     font-family: 'Avenir LT Heavy'
-//     src: url('AvenirLT-Heavy.eot')
-//     src: url('AvenirLT-Heavy.eot?#iefix') format('embedded-opentype'),
-//     url('AvenirLT-Heavy.woff') format('woff'),
-//     url('AvenirLT-Heavy.ttf') format('truetype')
-//     font-weight: normal
-//     font-style: normal
-
-// .box-name {font-family: 'Avenir LT Heavy';}
+@media ( max-width: 1200px )
+	.container
+		max-width: 960px
+@media ( max-width: 992px )
+	.container
+		max-width: 720px
+@media ( max-width: 768px )
+	.container
+		max-width: 540px
+@media ( max-width: 576px )
+	.container
+		width: 100%
+		padding: 0 15px

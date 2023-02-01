@@ -1,0 +1,49 @@
+.header
+    margin-top: 20px
+    margin-bottom: 140px
+    &__wrapper
+        display: flex
+        width: 410px
+        justify-content: space-between
+        align-items: center
+    &__signIn
+        cursor: pointer
+        display: flex
+        align-items: center
+    &__icon
+        margin-right: 12px
+    &__login
+        color: #fff
+        font-size: 18px
+        font-family: 'NotoSans'
+        line-height: 24px
+        font-weight: 500
+        border-bottom: 1px solid #fff
+@media ( max-width: 992px )
+    .header
+        &__logo
+            img
+                width: 190px
+        &__wrapper
+            width: 100%
+@media ( max-width: 768px )
+    .header
+        &__logo
+            img
+                width: 150px
+                height: 70px
+        &__wrapper
+            width: 100%
+@media ( max-width: 576px )
+    .header
+        margin-bottom: 100px
+        &__wrapper
+            width: 100%
+        &__icon
+            display: none
+        &__login
+            font-size: 14px
+        &__logo
+            img
+                width: 102px
+                height: 52px
