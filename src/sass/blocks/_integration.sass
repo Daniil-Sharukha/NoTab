@@ -1,0 +1,70 @@
+.integration
+    margin-bottom: 220px
+    &__wrapper
+        display: flex
+    &__column
+        position: relative
+        &:first-child
+            width: 45%
+            padding-top: 90px
+        &:last-child
+            width: 55%
+        .subtitle
+            width: 70%
+    &__elements
+        svg
+            width: 100%
+        &-mobile
+            display: none
+    &__circle
+        position: absolute
+        z-index: -1
+        top: -150px
+        left: -280px
+@media ( max-width: 1200px )
+    .integration
+        &__column
+            .subtitle
+                width: 90%
+        &__elements
+            svg
+                height: 400px
+@media ( max-width: 768px )
+    .integration
+        margin-bottom: 40px
+        &__wrapper
+            flex-direction: column
+        &__column
+            &:first-child
+                width: 100%
+                padding-top: 0
+                margin-bottom: 30px
+            &:last-child
+                width: 100%
+            .subtitle
+                width: 100%
+        &__circle
+            top: -120px
+            left: 230px
+            img
+                width: 300px
+                height: 300px
+        &__elements
+            svg 
+                height: 350px
+@media ( max-width: 576px )
+    .integration
+        .container
+            padding: 0
+        &__circle
+            display: none
+        &__elements
+            display: none
+            &-mobile
+                display: block
+                width: 100%
+                svg
+                    width: 100%
+        &__column
+            &:first-child
+                padding: 0 15px
