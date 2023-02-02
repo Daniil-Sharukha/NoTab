@@ -1,0 +1,79 @@
+.footer
+    padding-bottom: 85px
+    position: relative
+    &__wrapper
+        display: flex
+        justify-content: space-between
+    &__column
+        width: 170px
+    &__decoration
+        position: absolute
+        overflow: hidden
+        height: 530px
+        width: 905px
+        left: -6%
+        bottom: 0
+        z-index: -1
+        img
+            width: 100%
+    &__logo
+        svg
+            width: 81px
+            height: 16px
+    &__contact
+        font-family: 'Avenir'
+        font-weight: 500
+        font-size: 18px
+        line-height: 25px
+        color: $main-color
+        margin-top: 16px
+        margin-bottom: 19px
+        a
+            font-family: 'Avenir'
+            font-weight: 500
+            font-size: 18px
+            line-height: 25px
+            color: $main-color
+    &__copyright
+        font-family: 'Avenir'
+        font-weight: 800
+        font-size: 18px
+        line-height: 25px
+        color: $main-color
+    a.footer__policy
+        display: block
+        font-family: 'Avenir'
+        font-style: normal
+        font-weight: 800
+        font-size: 18px
+        line-height: 25px
+        color: $main-color
+        &:first-child
+            margin-bottom: 25px
+@media ( max-width: 992px )
+    .footer
+        &__decoration
+            width: 605px
+            left: -20%
+        a.footer__policy
+            text-align: center
+@media ( max-width: 768px )
+    .footer
+        &__wrapper
+            flex-direction: column-reverse
+        &__column
+            text-align: center
+            width: 100%
+            &:last-child
+                margin-bottom: 60px
+        &__policy
+            max-width: fit-content
+            margin: 0 auto
+@media ( max-width: 576px )
+    .footer
+        padding-bottom: 25px
+        &__decoration
+            left: -40%
+            height: 480px
+            height: 280px
+            width: 400px

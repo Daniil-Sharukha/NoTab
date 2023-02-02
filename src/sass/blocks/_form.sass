@@ -1,7 +1,25 @@
 .form
     margin-bottom: 150px
+    overflow: hidden
     &__decoration
-        display: none
+        position: relative
+    &__circle
+        &-first
+            position: absolute
+            left: 20%
+            width: 550px
+            top: -210px
+            z-index: -1
+            img
+                width: 100%
+        &-second
+            position: absolute
+            top: 520px
+            right: -5%
+            width: 500px
+            z-index: -1
+            img
+                width: 100%
     &__inner
         max-width: 580px
         text-align: center
@@ -76,10 +94,25 @@
             img
                 width: 260px
                 height: 80px
+@media ( max-width: 1200px )
+    .form
+        &__circle
+            &-first
+                left: 10%
+                width: 350px
+                top: -60px
+            &-second
+                right: -15%
 @media ( max-width: 992px )
     .form
         &__content
             width: 80%
+        &__circle
+            &-first
+                width: 300px
+                top: -50px
+            &-second
+                right: -35%
 @media ( max-width: 768px )
     .form
         &__content
@@ -96,6 +129,13 @@
                 a
                     &:first-child
                         margin-bottom: 30px
+        &__circle
+            &-first
+                width: 400px
+                left: -15%
+            &-second
+                top: 600px
+                width: 450px
 @media ( max-width: 576px )
     .form
         margin-bottom: 65px
@@ -128,3 +168,10 @@
                 img
                     width: 185px
                     height: 60px
+        &__circle
+            &-first
+                width: 400px
+                left: -45%
+            &-second
+                top: 650px
+                right: -75%
