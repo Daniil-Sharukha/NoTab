@@ -10,15 +10,37 @@
         cursor: pointer
         display: flex
         align-items: center
+        &:hover
+            .header__login
+                color: #cccbcb
+                &::after
+                    transition-delay: .1s
+                    transform: scaleX(1)
+                    transform-origin: bottom left   
     &__icon
         margin-right: 12px
     &__login
+        position: relative
+        display: inline-block
         color: #fff
         font-size: 18px
         font-family: 'NotoSans'
-        line-height: 24px
+        line-height: 30px
         font-weight: 500
-        border-bottom: 1px solid #fff
+        padding-bottom: 1px
+        transition: .3s all
+        &::after
+            content: ''
+            position: absolute
+            width: 100%
+            transform: scaleX(0)
+            height: 2px
+            bottom: -4px
+            left: 0
+            background-color: $main-color
+            transform-origin: bottom right
+            transition: transform 0.3s ease-out
+            z-index: -1
 @media ( max-width: 992px )
     .header
         &__logo

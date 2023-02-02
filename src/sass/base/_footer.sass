@@ -6,6 +6,28 @@
         justify-content: space-between
     &__column
         width: 170px
+        a
+            max-width: fit-content
+            position: relative
+            &::after
+                content: ''
+                position: absolute
+                width: 100%
+                transform: scaleX(0)
+                height: 2px
+                bottom: -4px
+                left: 0
+                background-color: $main-color
+                transform-origin: bottom right
+                transition: transform 0.3s ease-out
+                z-index: -1
+            &:hover
+                text-decoration: none
+                color: #cccbcb
+                &::after
+                    transition-delay: .1s
+                    transform: scaleX(1)
+                    transform-origin: bottom left  
     &__decoration
         position: absolute
         overflow: hidden
